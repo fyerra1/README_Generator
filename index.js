@@ -37,6 +37,21 @@ const questions = [
     message: 'Please select a license for your project.',
     choices: ['Apache', 'Boost', 'MIT', 'Mozilla', 'Unlicense']
   },
+  {
+    type: 'input',
+    name: 'username',
+    message: 'Please provide your github username.',
+  },
+  {
+    type: 'input',
+    name: 'gitlink',
+    message: 'Please provide the link to your github page.',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Please provide your email.',
+  },
 
 ];
 
