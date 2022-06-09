@@ -9,17 +9,27 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'What is the title of your project?',
+    message: 'Please enter name of project',
   },
   {
     type: 'input',
-    name: 'github',
-    message: 'What is your github username?',
+    name: 'desc',
+    message: 'Please describe your project.',
   },
   {
     type: 'input',
-    name: 'email',
-    message: 'What is your email?',
+    name: 'installation',
+    message: 'Please provide instructions to install project',
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Please provide instructions for use.',
+  },
+  {
+    type: 'input',
+    name: 'contribution',
+    message: 'Please list your collaborators (if any).',
   },
 
 ];
