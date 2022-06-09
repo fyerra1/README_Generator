@@ -18,8 +18,8 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'installation',
-    message: 'Please provide instructions to install project',
+    name: 'install',
+    message: 'Please provide instructions for necessary installations to run project',
   },
   {
     type: 'input',
@@ -31,6 +31,12 @@ const questions = [
     name: 'contribution',
     message: 'Please list your collaborators (if any).',
   },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Please select a license for your project.',
+    choices: ['Apache', 'Boost', 'MIT', 'Mozilla', 'Unlicense']
+  },
 
 ];
 
@@ -41,7 +47,7 @@ function writeToFile(content) {
       if (error) {
         throw error;
       } else {
-        console.log('File successfully created!');
+        console.log('File created!');
       }
     })
 }
@@ -50,12 +56,12 @@ function writeToFile(content) {
 function init() {
   inquirer
     .prompt(questions)
-    .then(data => {
-      console.log(data);
-      const readmeTemplate = generateMarkdown(data);
-      console.log(readmeTemplate);
-      writeToFile(readmeTemplate);
-    })
+      .then(data => {
+        console.log(data);
+        const readmeTemplate = generateMarkdown(data);
+        console.log(readmeTemplate);
+        writeToFile(readmeTemplate);
+      })
   
 }
 

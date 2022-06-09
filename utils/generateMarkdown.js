@@ -30,6 +30,10 @@ function generateMarkdown(data) {
 
   ${data.contribution}
 
+  ## License
+
+  ${data.license}
+
 `;
 }
 
