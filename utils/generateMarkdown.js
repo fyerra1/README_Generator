@@ -18,3 +18,6 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+// list inquirer 
+// list of badges
