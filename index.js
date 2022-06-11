@@ -77,7 +77,6 @@ function init() {
         console.log(readmeTemplate);
         writeToFile(readmeTemplate);
       })
-  
 }
 
 // Function call to initialize app
