@@ -5,11 +5,11 @@
   Test
 
   ## Table of Contents
-  ### [Installation](#installation)
-  ### [Usage](#usage)
-  ### [Contribution](#contribution)
-  ### [License](#license)
-  ### [Contact](#questions)
+  #### [Installation](#installation)
+  #### [Usage](#usage)
+  #### [Contribution](#contribution)
+  #### [License](#license)
+  #### [Contact](#questions)
 
   ## Installation
 
