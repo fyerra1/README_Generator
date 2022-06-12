@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown')
-console.log(generateMarkdown);
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -19,7 +18,7 @@ const questions = [
   {
     type: 'input',
     name: 'install',
-    message: 'Please provide instructions for necessary installations to run project',
+    message: 'Please provide instructions for necessary installations to run project.',
   },
   {
     type: 'input',
@@ -29,7 +28,7 @@ const questions = [
   {
     type: 'input',
     name: 'contribution',
-    message: 'Please list your collaborators (if any).',
+    message: 'If necessary, please describe how others can contribute to this project (Enter to skip).',
   },
   {
     type: 'list',

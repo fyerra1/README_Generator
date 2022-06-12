@@ -1,7 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-
-
 function renderLicenseBadge(license) {
   if (license === 'Apache') {
     return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
@@ -22,15 +20,15 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'Apache') {
-    return `https://choosealicense.com/licenses/apache-2.0/`;
+    return '[Apache](https://choosealicense.com/licenses/apache-2.0/) Licensed';
   } else if (license === 'Boost') {
-    return `https://choosealicense.com/licenses/bsl-1.0/`;
+    return '[Boost](https://choosealicense.com/licenses/bsl-1.0/0) Licensed';
   } else if (license === 'MIT') {
-    return `https://choosealicense.com/licenses/mit/`;
+    return '[MIT](https://choosealicense.com/licenses/mit/) Licensed';
   } else if (license === 'Mozilla') {
-    return `https://choosealicense.com/licenses/mpl-2.0/`;
+    return '[Mozilla](https://choosealicense.com/licenses/mpl-2.0/) Licensed';
   } else if (license === 'None') {
-    return `https://choosealicense.com/licenses/unlicense/`;
+    return '[Unlicensed](https://choosealicense.com/licenses/unlicense/)';
   } else {
     return "";
   }
@@ -51,7 +49,6 @@ function generateMarkdown(data) {
 
   ${data.desc}
 
-
   ## Installation
 
   ${data.install}
@@ -68,10 +65,12 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
+  ## Questions?
+
+  ${data.username} ${data.gitlink}
+  ${data.email}
+
 `;
 }
 
 module.exports = generateMarkdown;
-
-// list inquirer 
-// list of badges
