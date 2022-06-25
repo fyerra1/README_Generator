@@ -28,7 +28,7 @@ const questions = [
   {
     type: 'input',
     name: 'contribution',
-    message: 'If necessary, please describe how others can contribute to this project (Enter to skip).',
+    message: 'If applicable, please describe how others can contribute to this project (Enter to skip).',
   },
   {
     type: 'list',
@@ -38,13 +38,8 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'username',
+    name: 'git',
     message: 'Please provide your github username.',
-  },
-  {
-    type: 'input',
-    name: 'gitlink',
-    message: 'Please provide the link to your github page.',
   },
   {
     type: 'input',

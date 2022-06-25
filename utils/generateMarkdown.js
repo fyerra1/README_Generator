@@ -74,8 +74,8 @@ function generateMarkdown(data) {
 
   ## Questions?
 
-  ${data.username} ${data.gitlink}
-  ${data.email}
+  [${data.git}](https://github.com/${data.git})
+  E-mail: ${data.email}
 
 `;
 }
