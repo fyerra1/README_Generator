@@ -2,7 +2,13 @@
   
   ## Description
 
-  This application is a README template and generator.
+  This application is a README template/generator
+
+  ## Video Recording
+  [WALK-THROUGH VIDEO](https://drive.google.com/drive/folders/1eBZAD336dVGj7XKMfhvl_BHAKF--iBR-?usp=sharing)
+
+  ## Screenshots
+  ![](./assets/screenshot.png)
 
   ## Table of Contents
   #### [Installation](#installation)
@@ -13,11 +19,11 @@
 
   ## Installation
 
-  With terminal open, run command npm i to install the necessary dependencies. Then run command node index.js to initiate application.
+  With the terminal open, run command npm i to install the necessary dependencies. Then, run comman node index.js to initiate application.
 
   ## Usage
 
-  You only need to answer prompts
+  You only need to answer the prompts.
 
   ## Contribution
 
